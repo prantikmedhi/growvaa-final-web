@@ -14,10 +14,11 @@ export function SiteFooter() {
               excellence.
             </p>
             <div className="flex space-x-4 pt-2">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook size={20} />
-                <span className="sr-only">Facebook</span>
-              </Link>
+              <Link href="#" passHref>
+  <a className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+    <Facebook size={20} />
+  </a>
+</Link>
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
