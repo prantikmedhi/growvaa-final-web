@@ -134,7 +134,7 @@ export default function HomePage() {
                 Start Your Journey
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <a href="#">
+  <a href="#">
   <Button
     variant="outline"
     size="lg"
