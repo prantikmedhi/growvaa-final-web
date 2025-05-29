@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="space-y-4">
-            <Image src="/logo.jpg" alt="Growvaa" width={150} height={40} />
+            <Image src="/logo.jpg" alt="Growvaa" width={60} height={30} />
             <p className="text-gray-400 mt-4">
               Elevating businesses through premium digital solutions with a focus on organic growth and professional
               excellence.
