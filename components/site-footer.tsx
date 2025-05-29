@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="space-y-4">
-            <Image src="/logo.png" alt="Growvaa" width={150} height={40} />
+            <Image src="/logo.jpg" alt="Growvaa" width={150} height={40} />
             <p className="text-gray-400 mt-4">
               Elevating businesses through premium digital solutions with a focus on organic growth and professional
               excellence.
@@ -93,16 +93,16 @@ export function SiteFooter() {
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Contact</h3>
             <ul className="space-y-3 text-gray-400">
-              <li>contact@growvaa.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>123 Digital Avenue, Suite 101</li>
-              <li>New York, NY 10001</li>
+              <li>growvaadigital@gmail.com</li>
+              <li>+91 8486630592</li>
+              <li>India, Assam</li>
+              <li>Guwahati</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-gray-400">
-          <p>© 2024 Growvaa. All rights reserved.</p>
+          <p>© 2025 Growvaa. All rights reserved.</p>
         </div>
       </div>
     </footer>
