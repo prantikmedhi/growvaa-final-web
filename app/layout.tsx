@@ -17,14 +17,55 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Growvaa | Premium Digital Marketing Agency",
-  description: "Elevate your business with premium digital marketing solutions from Growvaa.",
-    generator: 'v0.dev'
+  title: "Growvaa | Premium Digital Marketing Agency - Affordable Website Development & Social Media Management",
+  description:
+    "Transform your startup with Growvaa's premium digital marketing services. Affordable website development, social media management, video editing & growth strategies. Get organic results that scale your business.",
+  keywords:
+    "digital marketing agency, website development, social media management, video editing, SEO services, startup marketing, affordable digital marketing, organic growth strategies, business growth, online presence",
+  authors: [{ name: "Growvaa Team" }],
+  creator: "Growvaa",
+  publisher: "Growvaa",
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://growvaa.com",
+    siteName: "Growvaa",
+    title: "Growvaa | Premium Digital Marketing Agency",
+    description:
+      "Transform your startup with premium digital marketing services. Affordable solutions for website development, social media management, and business growth.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Growvaa - Premium Digital Marketing Agency",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Growvaa | Premium Digital Marketing Agency",
+    description:
+      "Transform your startup with premium digital marketing services. Affordable solutions for business growth.",
+    images: ["/og-image.jpg"],
+    creator: "@growvaa",
+  },
+  alternates: {
+    canonical: "https://growvaa.com",
+  },
+  generator: "v0.dev",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className={cn("min-h-screen bg-black text-white", inter.variable, playfair.variable)}>
         <SiteHeader />
         <main className="pt-20">{children}</main>

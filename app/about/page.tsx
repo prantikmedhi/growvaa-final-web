@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { ArrowRight, Award, CheckCircle, Users } from "lucide-react"
+import { ArrowRight, Award, CheckCircle, Users, Target, Lightbulb } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ElegantShape } from "@/components/elegant-shape"
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -35,6 +36,34 @@ export default function AboutPage() {
           <video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-10">
             <source src="/background-animation.mp4" type="video/mp4" />
           </video>
+        </div>
+
+        {/* Geometric Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <ElegantShape
+            delay={0.3}
+            width={500}
+            height={120}
+            rotate={15}
+            gradient="from-white/[0.06]"
+            className="left-[-8%] top-[20%]"
+          />
+          <ElegantShape
+            delay={0.5}
+            width={400}
+            height={100}
+            rotate={-20}
+            gradient="from-white/[0.06]"
+            className="right-[-6%] top-[60%]"
+          />
+          <ElegantShape
+            delay={0.7}
+            width={300}
+            height={80}
+            rotate={10}
+            gradient="from-white/[0.06]"
+            className="left-[10%] bottom-[15%]"
+          />
         </div>
 
         <div className="relative z-10 container mx-auto px-6">
@@ -155,8 +184,55 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Mission & Vision */}
       <section className="py-24">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="bg-gradient-to-br from-gray-900/50 to-black/50 border border-white/10 p-8 rounded-md"
+            >
+              <div className="w-16 h-16 bg-white/5 rounded-md flex items-center justify-center mb-6">
+                <Target className="w-8 h-8 text-white" />
+              </div>
+              <motion.h3 variants={fadeInUp} className="text-3xl font-bold mb-6 text-white font-playfair">
+                Our Mission
+              </motion.h3>
+              <motion.p variants={fadeInUp} className="text-gray-400 leading-relaxed">
+                To democratize premium digital marketing services by making them accessible and affordable for
+                businesses of all sizes. We believe that every entrepreneur deserves the tools and strategies needed to
+                succeed in the digital landscape, regardless of their budget constraints.
+              </motion.p>
+            </motion.div>
+
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="bg-gradient-to-br from-gray-900/50 to-black/50 border border-white/10 p-8 rounded-md"
+            >
+              <div className="w-16 h-16 bg-white/5 rounded-md flex items-center justify-center mb-6">
+                <Lightbulb className="w-8 h-8 text-white" />
+              </div>
+              <motion.h3 variants={fadeInUp} className="text-3xl font-bold mb-6 text-white font-playfair">
+                Our Vision
+              </motion.h3>
+              <motion.p variants={fadeInUp} className="text-gray-400 leading-relaxed">
+                To become the leading digital marketing agency that empowers small and medium businesses to compete with
+                industry giants. We envision a future where innovative digital strategies are not a luxury, but a
+                standard tool available to every ambitious entrepreneur.
+              </motion.p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-24 bg-gray-900/30">
         <div className="container mx-auto px-6">
           <motion.div
             initial="hidden"
@@ -245,9 +321,15 @@ export default function AboutPage() {
               Let's discuss how we can help elevate your business to new digital heights.
             </motion.p>
             <motion.div variants={fadeInUp}>
-              <Button size="lg" className="bg-white hover:bg-gray-200 text-black font-semibold px-8 py-3 rounded-md">
-                Contact Us Today
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button
+                size="lg"
+                className="bg-white hover:bg-gray-200 text-black font-semibold px-8 py-3 rounded-md"
+                asChild
+              >
+                <a href="/contact">
+                  Contact Us Today
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
               </Button>
             </motion.div>
           </motion.div>

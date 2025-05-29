@@ -1,10 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Globe, Users, Video, TrendingUp, CheckCircle, Sparkles } from "lucide-react"
+import { ArrowRight, Globe, Users, Video, TrendingUp, CheckCircle, Sparkles, Star, Clock, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { cn } from "@/lib/utils"
+import { ElegantShape } from "@/components/elegant-shape"
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -99,6 +99,42 @@ export default function ServicesPage() {
           <video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-10">
             <source src="/background-animation.mp4" type="video/mp4" />
           </video>
+        </div>
+
+        {/* Geometric Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <ElegantShape
+            delay={0.3}
+            width={600}
+            height={140}
+            rotate={12}
+            gradient="from-white/[0.06]"
+            className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
+          />
+          <ElegantShape
+            delay={0.5}
+            width={500}
+            height={120}
+            rotate={-15}
+            gradient="from-white/[0.06]"
+            className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
+          />
+          <ElegantShape
+            delay={0.4}
+            width={300}
+            height={80}
+            rotate={-8}
+            gradient="from-white/[0.06]"
+            className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
+          />
+          <ElegantShape
+            delay={0.6}
+            width={200}
+            height={60}
+            rotate={20}
+            gradient="from-white/[0.06]"
+            className="right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
+          />
         </div>
 
         <div className="relative z-10 container mx-auto px-6">
@@ -245,7 +281,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Pricing Overview */}
+      {/* Why Choose Us Section */}
       <section className="py-24">
         <div className="container mx-auto px-6">
           <motion.div
@@ -256,75 +292,46 @@ export default function ServicesPage() {
             className="text-center mb-16"
           >
             <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-bold mb-8 text-white font-playfair">
-              Flexible Pricing
+              Why Choose Growvaa?
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-xl text-gray-400 max-w-3xl mx-auto">
-              We offer transparent, affordable pricing packages designed to fit businesses at every stage of growth.
+              We combine expertise, innovation, and dedication to deliver exceptional results for your business.
             </motion.p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Starter",
-                price: "$497",
-                description: "Perfect for new businesses ready to establish their digital presence",
+                icon: Star,
+                title: "Proven Results",
+                description: "Over 500 successful projects with measurable ROI improvements for our clients.",
               },
               {
-                name: "Growth",
-                price: "$997",
-                description: "Comprehensive solution for businesses looking to scale their digital impact",
-                featured: true,
+                icon: Clock,
+                title: "Fast Delivery",
+                description: "Quick turnaround times without compromising on quality or attention to detail.",
               },
               {
-                name: "Enterprise",
-                price: "$1,997",
-                description: "Complete digital transformation for established brands",
+                icon: Shield,
+                title: "Reliable Support",
+                description: "24/7 customer support and ongoing maintenance to ensure your success.",
               },
-            ].map((plan, index) => (
+            ].map((benefit, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={cn(
-                  "bg-gradient-to-br from-gray-900 to-black border rounded-md p-8 text-center",
-                  plan.featured ? "border-white/30 shadow-lg relative transform scale-105" : "border-white/10",
-                )}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="bg-gradient-to-br from-gray-900/50 to-black/50 border border-white/10 p-8 rounded-md text-center"
               >
-                {plan.featured && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold">Most Popular</div>
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold mb-2 text-white">{plan.name}</h3>
-                <div className="text-4xl font-bold my-4 text-white">
-                  {plan.price}
-                  <span className="text-sm text-gray-400">/mo</span>
+                <div className="w-16 h-16 bg-white/5 rounded-md flex items-center justify-center mx-auto mb-6">
+                  <benefit.icon className="w-8 h-8 text-white" />
                 </div>
-                <p className="text-gray-400 mb-6">{plan.description}</p>
-                <Button
-                  className={cn(
-                    "w-full",
-                    plan.featured
-                      ? "bg-white hover:bg-gray-200 text-black"
-                      : "bg-transparent border border-white/30 text-white hover:bg-white/10",
-                  )}
-                >
-                  Get Started
-                </Button>
+                <h3 className="text-2xl font-bold mb-4 text-white">{benefit.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{benefit.description}</p>
               </motion.div>
             ))}
-          </div>
-          <div className="text-center mt-8 text-gray-400">
-            <p>
-              Need a custom solution?{" "}
-              <a href="/contact" className="text-white underline">
-                Contact us
-              </a>{" "}
-              for personalized pricing.
-            </p>
           </div>
         </div>
       </section>
@@ -346,9 +353,15 @@ export default function ServicesPage() {
               Let's discuss how our services can help you achieve your business goals.
             </motion.p>
             <motion.div variants={fadeInUp}>
-              <Button size="lg" className="bg-white hover:bg-gray-200 text-black font-semibold px-8 py-3 rounded-md">
-                Schedule a Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button
+                size="lg"
+                className="bg-white hover:bg-gray-200 text-black font-semibold px-8 py-3 rounded-md"
+                asChild
+              >
+                <a href="/contact">
+                  Schedule a Consultation
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
               </Button>
             </motion.div>
           </motion.div>
