@@ -138,7 +138,7 @@ export default function HomePage() {
 <a href="#">
   <Button
     size="lg"
-    className="bg-white text-black hover:bg-gray-200 font-semibold px-8 py-4 text-lg rounded-md shadow-lg transition-all duration-300 hover:scale-105"
+    className="border-2 border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white font-semibold px-8 py-4 text-lg rounded-md shadow-lg transition-all duration-300 hover:scale-105"
   >
     Contact Us Today
   </Button>
