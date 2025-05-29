@@ -43,7 +43,7 @@ export function SiteHeader() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image src="/logo.png" alt="Growvaa" width={150} height={40} priority />
+            <Image src="/logo.jpg" alt="Growvaa" width={150} height={40} priority />
           </Link>
 
           {/* Desktop Navigation */}
