@@ -94,7 +94,11 @@ export function SiteFooter() {
             <h3 className="text-white font-semibold text-lg mb-4">Contact</h3>
             <ul className="space-y-3 text-gray-400">
               <li>growvaadigital@gmail.com</li>
-              <li>+91 8486630592</li>
+              <li>
+  <a href="https://wa.me/918486630592" target="_blank" rel="noopener noreferrer">
+    +91 8486630592
+  </a>
+</li>
               <li>India, Assam</li>
               <li>Guwahati</li>
             </ul>
