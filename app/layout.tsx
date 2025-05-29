@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://growvaa.in",
   },
-
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
