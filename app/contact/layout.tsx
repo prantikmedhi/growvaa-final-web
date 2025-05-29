@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     title: "Contact Growvaa | Get Your Free Digital Marketing Consultation",
     description:
       "Ready to transform your business? Contact Growvaa for a free consultation. Get in touch with our digital marketing experts today.",
-    url: "https://growvaa.com/contact",
+    url: "https://growvaa.in/contact",
   },
   alternates: {
-    canonical: "https://growvaa.com/contact",
+    canonical: "https://growvaa.in/contact",
   },
 }
 
