@@ -127,6 +127,7 @@ export default function HomePage() {
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-6 justify-center">
+             <a href="/services">
               <Button
   size="lg"
   className="bg-white text-black hover:bg-gray-200 font-semibold px-8 py-4 text-lg rounded-md shadow-lg transition-all duration-300 hover:scale-105"
@@ -134,8 +135,9 @@ export default function HomePage() {
   Start Your Journey
   <ArrowRight className="ml-2 w-5 h-5" />
 </Button>
+               </a>
 
-<a href="#">
+<a href="/contact">
   <Button
     size="lg"
     className="border-2 border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white font-semibold px-8 py-4 text-lg rounded-md shadow-lg transition-all duration-300 hover:scale-105"
