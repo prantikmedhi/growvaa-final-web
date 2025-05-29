@@ -137,7 +137,7 @@ export default function HomePage() {
               <Button
   variant="outline"
   size="lg"
-  className="border-2 border-white/30 text-white hover:text-white hover:bg-white/10 px-8 py-4 text-lg rounded-md backdrop-blur-sm transition-all duration-300 hover:scale-105"
+  className="border-2 border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg rounded-md backdrop-blur-sm transition-all duration-300 hover:scale-105"
 >
   View Our Work
 </Button>
@@ -358,7 +358,7 @@ export default function HomePage() {
               <Button
   variant="outline"
   size="lg"
-  className="border-2 border-white/30 text-white hover:text-white hover:bg-white/10 px-12 py-4 text-lg rounded-md backdrop-blur-sm transition-all duration-300 hover:scale-105"
+  className="border-2 border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white px-12 py-4 text-lg rounded-md backdrop-blur-sm transition-all duration-300 hover:scale-105"
 >
   Schedule Consultation
 </Button>
