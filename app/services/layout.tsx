@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     title: "Digital Marketing Services | Website Development & Social Media - Growvaa",
     description:
       "Comprehensive digital marketing services including website development, social media management, video editing, and growth strategies. Affordable packages for startups.",
-    url: "https://growvaa.com/services",
+    url: "https://growvaa.in/services",
   },
   alternates: {
-    canonical: "https://growvaa.com/services",
+    canonical: "https://growvaa.in/services",
   },
 }
 
