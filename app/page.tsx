@@ -135,14 +135,14 @@ export default function HomePage() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <a href="#">
-              <Button
-  variant="outline"
-  size="lg"
-  className="border-2 border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg rounded-md backdrop-blur-sm transition-all duration-300 hover:scale-105"
->
-  Contact Us Today
-</Button>
-                </a>
+  <Button
+    variant="outline"
+    size="lg"
+    className="border-2 border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg rounded-md backdrop-blur-sm transition-all duration-300 hover:scale-105"
+  >
+    Contact Us Today
+  </Button>
+</a>
             </motion.div>
           </motion.div>
         </div>
