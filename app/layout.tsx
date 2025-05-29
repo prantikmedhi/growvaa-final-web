@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Transform your startup with Growvaa's premium digital marketing services. Affordable website development, social media management, video editing & growth strategies. Get organic results that scale your business.",
   keywords:
-    "digital marketing agency, website development, social media management, video editing, SEO services, startup marketing, affordable digital marketing, organic growth strategies, business growth, online presence",
+    "digital marketing agency, website development, social media management, video editing, SEO services, startup marketing, affordable digital marketing, organic growth strategies, business growth, online presence, Growvaa, Growva",
   authors: [{ name: "Growvaa Team" }],
   creator: "Growvaa",
   publisher: "Growvaa",
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://growvaa.com",
+    url: "https://growvaa.in",
     siteName: "Growvaa",
     title: "Growvaa | Premium Digital Marketing Agency",
     description:
       "Transform your startup with premium digital marketing services. Affordable solutions for website development, social media management, and business growth.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Growvaa - Premium Digital Marketing Agency",
@@ -48,14 +48,13 @@ export const metadata: Metadata = {
     title: "Growvaa | Premium Digital Marketing Agency",
     description:
       "Transform your startup with premium digital marketing services. Affordable solutions for business growth.",
-    images: ["/og-image.jpg"],
+    images: ["/logo.jpg"],
     creator: "@growvaa",
   },
   alternates: {
-    canonical: "https://growvaa.com",
+    canonical: "https://growvaa.in",
   },
-  generator: "v0.dev",
-}
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
