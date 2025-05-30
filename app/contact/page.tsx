@@ -387,22 +387,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-12 pb-24">
-        <div className="container mx-auto px-6">
-          <div className="bg-white/5 border border-white/10 rounded-md overflow-hidden h-[400px] relative">
-            <div className="absolute inset-0 flex items-center justify-center bg-gray-900">
-              <p className="text-white text-center px-4">
-                Interactive map would be displayed here.
-                <br />
-                <span className="text-sm text-gray-400">
-                  (In a real implementation, this would be a Google Maps or similar integration)
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
   )
 }
