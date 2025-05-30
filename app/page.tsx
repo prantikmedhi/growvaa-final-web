@@ -302,7 +302,7 @@ export default function HomePage() {
                 <div className="relative z-10">
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     {[
-                      { number: "500+", label: "Projects Delivered" },
+                      { number: "100+", label: "Projects Delivered" },
                       { number: "98%", label: "Client Satisfaction" },
                       { number: "24/7", label: "Support Available" },
                       { number: "3x", label: "Average ROI Increase" },
@@ -315,10 +315,12 @@ export default function HomePage() {
                   </div>
 
                   <div className="flex justify-center">
+                    <a href="/contact">
                     <Button className="bg-white hover:bg-gray-200 text-black font-semibold px-8 py-3 rounded-md">
                       Get Started Today
                       <Zap className="ml-2 w-4 h-4" />
                     </Button>
+                      </a>
                   </div>
                 </div>
               </div>
