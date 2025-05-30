@@ -57,6 +57,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://growvaa.in",
+    "logo": "https://growvaa.in/logo.jpg"
+  }
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
@@ -64,6 +71,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#000000" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className={cn("min-h-screen bg-black text-white", inter.variable, playfair.variable)}>
         <SiteHeader />
