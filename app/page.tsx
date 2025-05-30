@@ -41,7 +41,7 @@ export default function HomePage() {
         </div>
 
         {/* Geometric Background */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-visible pointer-events-none z-[1]">
           <ElegantShape
             delay={0.3}
             width={600}
