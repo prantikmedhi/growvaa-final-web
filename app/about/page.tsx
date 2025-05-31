@@ -33,7 +33,8 @@ const team = [
     id: "prantik-medhi",
     name: "Prantik Pratim Medhi",
     role: "Founder & CEO",
-    bio: "Visionary leader with 8+ years of experience in digital marketing and business strategy. Passionate about making premium digital services accessible to growing businesses.",
+    bio: "Creative website and AI developer with global freelance expertise. Dedicated to crafting intelligent, SEO-driven solutions that elevate digital growth for businesses.
+ ",
     image: "/placeholder.svg?height=400&width=400",
     social: {
       linkedin: "https://linkedin.com/in/prantikmedhi",
