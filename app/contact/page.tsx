@@ -319,9 +319,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">Our Location</h3>
                     <p className="text-gray-400">
-                      123 Digital Avenue, Suite 101
+                      India, Assam
                       <br />
-                      New York, NY 10001
+                    Guwahati- 781001
                     </p>
                   </div>
                 </div>
@@ -349,7 +349,7 @@ export default function ContactPage() {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">Call Us</h3>
+                    <h3 className="text-xl font-semibold text-white mb-2">Contact Us</h3>
                     <p className="text-gray-400">
                       <a href="tel:+918486630592" className="hover:text-white transition-colors">
                         +91 8486630592
