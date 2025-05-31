@@ -333,12 +333,12 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
                     <p className="text-gray-400">
-                      <a href="mailto:contact@growvaa.com" className="hover:text-white transition-colors">
-                        contact@growvaa.com
+                      <a href="mailto:info@growvaa.in" className="hover:text-white transition-colors">
+                        info@growvaa.in
                       </a>
                       <br />
-                      <a href="mailto:support@growvaa.com" className="hover:text-white transition-colors">
-                        support@growvaa.com
+                      <a href="mailto:contact@growvaa.in" className="hover:text-white transition-colors">
+                        contact@growvaa.in
                       </a>
                     </p>
                   </div>
@@ -351,12 +351,12 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">Call Us</h3>
                     <p className="text-gray-400">
-                      <a href="tel:+15551234567" className="hover:text-white transition-colors">
-                        +1 (555) 123-4567
+                      <a href="tel:+918486630592" className="hover:text-white transition-colors">
+                        +91 8486630592
                       </a>
                       <br />
-                      <a href="tel:+15559876543" className="hover:text-white transition-colors">
-                        +1 (555) 987-6543
+                      <a href="tel:+918724867396" className="hover:text-white transition-colors">
+                        +91 8724867396
                       </a>
                     </p>
                   </div>
