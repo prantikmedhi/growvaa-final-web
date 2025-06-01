@@ -354,6 +354,7 @@ export default function HomePage() {
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-6 justify-center">
+             <a href="/services">
               <Button
                 size="lg"
                 className="bg-white hover:bg-gray-200 text-black font-semibold px-12 py-4 text-lg rounded-md shadow-lg transition-all duration-300 hover:scale-105"
@@ -361,6 +362,8 @@ export default function HomePage() {
                 Start Your Transformation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
+               </a>
+              <a href="/contact">
               <Button
   variant="outline"
   size="lg"
@@ -368,6 +371,7 @@ export default function HomePage() {
 >
   Schedule Consultation
 </Button>
+                </a>
             </motion.div>
           </motion.div>
         </div>
