@@ -182,11 +182,13 @@ export default function Loading() {
                 ease: "linear",
               }}
             >
-              {loadingSteps[currentStep] && (\
-                <loadingSteps[currentStep].icon \
-                  className={`w-8 h-8 ${loadingSteps[currentStep].color}`} 
-                />
-              )}
+              const StepIcon = loadingSteps[currentStep]?.icon
+
+...
+
+{StepIcon && (
+  <StepIcon className={`w-8 h-8 ${loadingSteps[currentStep].color}`} />
+)}
             </motion.div>
           </motion.div>
           
