@@ -179,17 +179,14 @@ export default function AboutPage() {
                   Our Story
                 </motion.h2>
                 <motion.p variants={fadeInUp} className="text-lg text-gray-400 mb-6 leading-relaxed">
-                  Founded in 2018, Growvaa began with a simple mission: to bridge the gap between premium digital
-                  services and affordability. We noticed that many small businesses and startups were priced out of
-                  quality digital marketing services, leaving them at a disadvantage in an increasingly digital world.
+                  Founded in 2025, Growvaa was born from a bold vision — to make high-quality digital marketing accessible, personal, and impactful for brands of all sizes. In a world flooded with cookie-cutter solutions and overpriced agencies, we set out to build something different: a creative powerhouse that values quality over quantity, relationships over revenue, and purpose over profit.
                 </motion.p>
                 <motion.p variants={fadeInUp} className="text-lg text-gray-400 mb-6 leading-relaxed">
-                  Our founder, having worked with both Fortune 500 companies and small businesses, saw an opportunity to
-                  bring enterprise-level strategies to growing businesses without the enterprise-level price tag.
+                  Our founder, after working on 100+ diverse projects across industries, recognized a gap in the market — where startups and small businesses struggled to find digital partners who truly cared about their growth. Leveraging real-world experience and a passion for results, Growvaa was launched to serve as that missing link — delivering enterprise-level creativity, strategy, and performance without the bloated costs. 
                 </motion.p>
                 <motion.p variants={fadeInUp} className="text-lg text-gray-400 leading-relaxed">
-                  Today, we've helped over 500 businesses establish and grow their digital presence, with a focus on
-                  organic, sustainable growth strategies that deliver long-term results.
+                 Since our launch, Growvaa has helped brands craft their identity, expand their reach, and build trust in the digital space through tailored SEO strategies, stunning web design, compelling content, and innovative social campaigns. As we grow, our mission remains the same: to give 100% in every project and be the creative force that drives our clients toward meaningful, lasting success.
+ 
                 </motion.p>
               </motion.div>
 
