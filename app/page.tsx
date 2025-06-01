@@ -226,8 +226,8 @@ export default function HomePage() {
               },
             ].map((service, index) => (
               <motion.div key={index} variants={fadeInUp}>
-                <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border border-white/10 backdrop-blur-sm hover:border-white/20 transition-all duration-500 group hover:scale-105">
-                  <CardContent className="p-8 text-center">
+                <Card className="bg-black border border-white/10 hover:border-white/20 hover:bg-neutral-900 transition-all duration-500 group hover:scale-105 shadow-inner shadow-white/5 backdrop-blur-sm">
+                <CardContent className="p-8 text-center">
                     <div
                       className={cn(
                         "w-16 h-16 mx-auto mb-6 rounded-md bg-gradient-to-r flex items-center justify-center",
