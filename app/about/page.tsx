@@ -201,9 +201,8 @@ export default function AboutPage() {
                   <Image src="/placeholder.svg?height=600&width=600" alt="Growvaa Team" fill className="object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-md shadow-xl">
-                  <p className="text-black font-bold text-xl">Est. 2018</p>
-                  <p className="text-gray-600 text-sm">6+ Years of Excellence</p>
-                </div>
+                  <p className="text-black font-bold text-xl">Est. 2025</p>
+               </div>
               </motion.div>
             </div>
           </div>
