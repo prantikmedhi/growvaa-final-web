@@ -179,14 +179,14 @@ export default function AboutPage() {
                   Our Story
                 </motion.h2>
                 <motion.p variants={fadeInUp} className="text-lg text-gray-400 mb-6 leading-relaxed">
-                  Founded in 2025, Growvaa was born from a bold vision — to make high-quality digital marketing accessible, personal, and impactful for brands of all sizes. In a world flooded with cookie-cutter solutions and overpriced agencies, we set out to build something different: a creative powerhouse that values quality over quantity, relationships over revenue, and purpose over profit.
+                  Founded in 2025, Growvaa was created to bring high-quality digital marketing to startups and small businesses. We saw a need for affordable, personalized solutions in a space full of overpriced, one-size-fits-all agencies.
+ 
                 </motion.p>
                 <motion.p variants={fadeInUp} className="text-lg text-gray-400 mb-6 leading-relaxed">
-                  Our founder, after working on 100+ diverse projects across industries, recognized a gap in the market — where startups and small businesses struggled to find digital partners who truly cared about their growth. Leveraging real-world experience and a passion for results, Growvaa was launched to serve as that missing link — delivering enterprise-level creativity, strategy, and performance without the bloated costs. 
+                  Our founder, with experience on over 100 projects, launched Growvaa to bridge this gap. The goal was simple: offer top-tier creativity, strategy, and execution—without the heavy costs.
                 </motion.p>
                 <motion.p variants={fadeInUp} className="text-lg text-gray-400 leading-relaxed">
-                 Since our launch, Growvaa has helped brands craft their identity, expand their reach, and build trust in the digital space through tailored SEO strategies, stunning web design, compelling content, and innovative social campaigns. As we grow, our mission remains the same: to give 100% in every project and be the creative force that drives our clients toward meaningful, lasting success.
- 
+                 Since then, we’ve helped brands grow through SEO, web design, content, and social media. Every project reflects our 100% commitment to quality, results, and long-term impact.
                 </motion.p>
               </motion.div>
 
