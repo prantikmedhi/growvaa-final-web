@@ -355,14 +355,14 @@ export default function HomePage() {
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-6 justify-center">
              <a href="/services">
-              <Button
-                size="lg"
-                className="bg-white hover:bg-gray-200 text-black font-semibold px-12 py-4 text-lg rounded-md shadow-lg transition-all duration-300 hover:scale-105"
-              >
-                Start Your Transformation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-               </a>
+  <Button
+    size="lg"
+    className="bg-white hover:bg-gray-200 text-black font-semibold px-10 py-3 text-base rounded-md shadow-lg transition-all duration-300 hover:scale-105"
+  >
+    Start Your Transformation
+    <ArrowRight className="ml-2 w-4 h-4" />
+  </Button>
+</a>
               <a href="/contact">
               <Button
   variant="outline"
