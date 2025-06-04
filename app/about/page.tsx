@@ -35,19 +35,19 @@ const team = [
     bio: "Creative website and AI developer with global freelance expertise. Dedicated to crafting intelligent, SEO-driven solutions that elevate digital growth for businesses.",
     social: {
       linkedin: "https://linkedin.com/in/prantikmedhi",
-      twitter: "https://twitter.com/prantikmedhi0",
-      email: "prantik@growvaa.in",
+      twitter: "https://twitter.com/prantikmedhii",
+      email: "prantikpratimmedhi@gmail.com",
     },
   },
   {
     id: "bhargav-bordoloi",
     name: "Bhargav Bordoloi",
     role: "Founder & CEO",
-    bio: "Award-winning designer and creative strategist with expertise in brand development, UI/UX design, and visual storytelling that drives engagement.",
+    bio: "Digital Strategy & Lead Generation Expert, Specializes in lead management and growth strategies, helping brands scale through smart, ROI-driven marketing.", 
     social: {
-      linkedin: "https://linkedin.com/in/bhargav-bordoloi",
-      twitter: "https://twitter.com/bhargavbordoloi",
-      email: "bhargav@growvaa.in",
+      linkedin: "https://linkedin.com/",
+      twitter: "https://twitter.com/bhargav_dhunu",
+      email: "bhargavbordoloi220@gmail.com",
     },
   },
   {
@@ -204,9 +204,9 @@ export default function AboutPage() {
                   </video>
                   <div className="absolute inset-0 pointer-events-none" />
                 </div>
-                <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-md shadow-xl">
-                  <p className="text-black font-bold text-xl">Est. 2025</p>
-                </div>
+                <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-md shadow-lg">
+  <p className="text-black font-bold text-lg">Est. 2025</p>
+</div>
               </motion.div>
             </div>
           </div>
