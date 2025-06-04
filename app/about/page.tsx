@@ -51,14 +51,15 @@ const team = [
     },
   },
   {
-    id: "jishnu",
-    name: "Jishnu",
-    role: "Lead Developer",
-    bio: "Full-stack developer specializing in modern web technologies, performance optimization, and scalable solutions. Expert in React, Next.js, and cloud architecture.",
+    id: "jishnu-s-deka",
+    name: "Jishnu Sarathi Deka",
+    role: "Lead Developer| Designer",
+    bio: "Creative Designer & Marketing Strategist. Crafts compelling visuals and data-driven campaigns that boost brand impact. Focused on blending aesthetics with strategy to turn ideas into unforgettable experiences.
+ ",
     social: {
-      linkedin: "https://linkedin.com/in/jishnu-dev",
-      github: "https://github.com/jishnu",
-      email: "jishnu@growvaa.in",
+      linkedin: "https://www.linkedin.com/in/jishnu-deka-4b8796248/",
+      twitter: "https://x.com/JishnuSarathi?t=K1-XfL3_oozsssF9a0fyfg&s=09", 
+      email: "dekajishnu117@gmail.com",
     },
   },
   {
