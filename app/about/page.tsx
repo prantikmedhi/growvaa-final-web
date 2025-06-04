@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
 import Head from "next/head"
 import { ArrowRight, Award, CheckCircle, Users, Target, Lightbulb, Linkedin, Twitter, Github, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -33,8 +32,7 @@ const team = [
     id: "prantik-medhi",
     name: "Prantik Pratim Medhi",
     role: "Founder & CEO",
-    bio: "Creative website and AI developer with global freelance expertise. Dedicated to crafting intelligent, SEO-driven solutions that elevate digital growth for businesses. ",
-    image: "/placeholder.svg?height=400&width=400",
+    bio: "Creative website and AI developer with global freelance expertise. Dedicated to crafting intelligent, SEO-driven solutions that elevate digital growth for businesses.",
     social: {
       linkedin: "https://linkedin.com/in/prantikmedhi",
       twitter: "https://twitter.com/prantikmedhi0",
@@ -46,7 +44,6 @@ const team = [
     name: "Bhargav Bordoloi",
     role: "Founder & CEO",
     bio: "Award-winning designer and creative strategist with expertise in brand development, UI/UX design, and visual storytelling that drives engagement.",
-    image: "/placeholder.svg?height=400&width=400",
     social: {
       linkedin: "https://linkedin.com/in/bhargav-bordoloi",
       twitter: "https://twitter.com/bhargavbordoloi",
@@ -58,7 +55,6 @@ const team = [
     name: "Jishnu",
     role: "Lead Developer",
     bio: "Full-stack developer specializing in modern web technologies, performance optimization, and scalable solutions. Expert in React, Next.js, and cloud architecture.",
-    image: "/placeholder.svg?height=400&width=400",
     social: {
       linkedin: "https://linkedin.com/in/jishnu-dev",
       github: "https://github.com/jishnu",
@@ -70,7 +66,6 @@ const team = [
     name: "Debashish",
     role: "Marketing Strategist",
     bio: "Data-driven marketing expert with deep expertise in SEO, content strategy, and growth hacking. Specializes in organic growth and conversion optimization.",
-    image: "/placeholder.svg?height=400&width=400",
     social: {
       linkedin: "https://linkedin.com/in/debashish-marketing",
       twitter: "https://twitter.com/debashish_mkt",
@@ -86,7 +81,6 @@ const generateTeamStructuredData = () => {
     name: member.name,
     jobTitle: member.role,
     description: member.bio,
-    image: `https://growvaa.in${member.image}`,
     url: `https://growvaa.in/about#${member.id}`,
     worksFor: {
       "@type": "Organization",
@@ -180,13 +174,12 @@ export default function AboutPage() {
                 </motion.h2>
                 <motion.p variants={fadeInUp} className="text-lg text-gray-400 mb-6 leading-relaxed">
                   Founded in 2025, Growvaa was created to bring high-quality digital marketing to startups and small businesses. We saw a need for affordable, personalized solutions in a space full of overpriced, one-size-fits-all agencies.
- 
                 </motion.p>
                 <motion.p variants={fadeInUp} className="text-lg text-gray-400 mb-6 leading-relaxed">
                   Our founder, with experience on over 100 projects, launched Growvaa to bridge this gap. The goal was simple: offer top-tier creativity, strategy, and execution—without the heavy costs.
                 </motion.p>
                 <motion.p variants={fadeInUp} className="text-lg text-gray-400 leading-relaxed">
-                 Since then, we’ve helped brands grow through SEO, web design, content, and social media. Every project reflects our 100% commitment to quality, results, and long-term impact.
+                  Since then, we've helped brands grow through SEO, web design, content, and social media. Every project reflects our 100% commitment to quality, results, and long-term impact.
                 </motion.p>
               </motion.div>
 
@@ -198,11 +191,22 @@ export default function AboutPage() {
                 className="relative"
               >
                 <div className="aspect-square relative rounded-md overflow-hidden border border-white/10">
-                  <Image src="/placeholder.svg?height=600&width=600" alt="Growvaa Team" fill className="object-cover" />
+                  <video 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline 
+                    disablePictureInPicture
+                    controlsList="nodownload nofullscreen noremoteplayback"
+                    className="w-full h-full object-cover"
+                  >
+                    <source src="/about-story-video.mp4" type="video/mp4" />
+                  </video>
+                  <div className="absolute inset-0 pointer-events-none" />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-md shadow-xl">
                   <p className="text-black font-bold text-xl">Est. 2025</p>
-               </div>
+                </div>
               </motion.div>
             </div>
           </div>
@@ -341,18 +345,12 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="group bg-gradient-to-br from-gray-900/50 to-black/50 border border-white/10 p-6 rounded-md hover:border-white/20 transition-all duration-300"
+                  className="group bg-gradient-to-br from-gray-900/50 to-black/50 border border-white/10 p-8 rounded-md hover:border-white/20 transition-all duration-300 flex flex-col"
                 >
-                  <div className="relative overflow-hidden rounded-md mb-6 aspect-square">
-                    <Image
-                      src={member.image || "/placeholder.svg"}
-                      alt={`${member.name}, ${member.role} at Growvaa`}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      priority={index < 2}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="w-full aspect-square bg-white/5 rounded-md mb-6 flex items-center justify-center">
+                    <div className="text-4xl font-bold text-white/50">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </div>
                   </div>
 
                   <header className="mb-4">
@@ -364,7 +362,7 @@ export default function AboutPage() {
                     <p className="text-gray-300 font-medium mb-3">{member.role}</p>
                   </header>
 
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6">{member.bio}</p>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">{member.bio}</p>
 
                   <footer className="flex gap-3 justify-center">
                     {member.social.linkedin && (
@@ -430,7 +428,7 @@ export default function AboutPage() {
                     href={`#${member.id}`}
                     className="px-4 py-2 bg-white/5 border border-white/10 rounded-md text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20"
                   >
-                    {member.name}
+                    {member.name.split(' ')[0]}
                   </a>
                 ))}
               </div>
