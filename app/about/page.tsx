@@ -54,8 +54,7 @@ const team = [
     id: "jishnu-s-deka",
     name: "Jishnu Sarathi Deka",
     role: "Lead Developer| Designer",
-    bio: "Creative Designer & Marketing Strategist. Crafts compelling visuals and data-driven campaigns that boost brand impact. Focused on blending aesthetics with strategy to turn ideas into unforgettable experiences.
- ",
+    bio: "Creative Designer & Marketing Strategist. Crafts compelling visuals and data-driven campaigns that boost brand impact. Focused on blending aesthetics with strategy to turn ideas into unforgettable experiences.",
     social: {
       linkedin: "https://www.linkedin.com/in/jishnu-deka-4b8796248/",
       twitter: "https://x.com/JishnuSarathi?t=K1-XfL3_oozsssF9a0fyfg&s=09", 
